@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octopus Care - Qualified & Endorsed Enrolled Nurse in Adelaide</title>
+    <meta name="description" content="Octopus Care provides nurse-led home help, personal care, transport, gardening, and more in Adelaide’s southern suburbs. Contact Nikki, a Qualified Endorsed Enrolled Nurse, for compassionate support.">
+    <meta name="keywords" content="nurse-led care Adelaide, personal care southern suburbs, home help Adelaide, dementia support, end-of-lease cleaning, companionship, transport services">
+    <meta name="author" content="Nikki - Octopus Care">
+    <!-- Google Fonts Import for Rubik -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Font Definitions */
+        @font-face {
+            font-family: 'Nourd';
+            src: url('https://octopuscare.com.au/fonts/nourd_regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Nourd', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9f0;
+        }
+        header {
+            background: linear-gradient(to right, #4d7ea8, #ff773d);
+            background-image: url('https://octopuscare.com.au/images/header.png');
+            background-size: cover;
+            background-position: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid #4d7ea8;
+            position: relative;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            max-height: 100px;
+            margin: auto;
+            display: block;
+        }
+        .social-link {
+            position: absolute;
+            right: 40px; /* Default for desktop */
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #fff; /* Circle color */
+            text-decoration: none;
+        }
+        .social-link:hover {
+            color: #fff; /* Circle stays white on hover */
+        }
+        .social-link .fa-circle {
+            color: inherit; /* Circle inherits from .social-link */
+        }
+        .social-link .fa-facebook-f {
+            color: #4d7ea8; /* "f" in teal */
+        }
+        .social-link:hover .fa-facebook-f {
+            color: #053225; /* "f" switches to dark teal on hover */
+        }
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h1 {
+            font-family: 'Rubik', Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-optical-sizing: auto;
+            color: #e4572e;
+        }
+        h2 {
+            font-family: 'Rubik', Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-optical-sizing: auto;
+            color: #4d7ea8;
+        }
+        .button {
+            background: #e4572e;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: 'Nourd', Arial, sans-serif;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            border: 2px solid #4d7ea8;
+        }
+        .button:hover {
+            background: #ff773d;
+            border-color: #4d7ea8;
+            color: #fff;
+        }
+
+        /* Phone Number Styling */
+        .phone-number {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .phone-number a {
+            color: #053225;
+            text-decoration: none;
+            font-family: 'Nourd', Arial, sans-serif;
+        }
+        .phone-number a:hover {
+            color: #4d7ea8;
+        }
+
+        /* Landing Section */
+        .landing {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            gap: 20px;
+        }
+        .landing-photo {
+            flex: 0 0 200px;
+        }
+        .landing-photo img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(5, 50, 37, 0.2);
+        }
+        .landing-bio {
+            flex: 1;
+            text-align: left;
+            min-width: 300px;
+        }
+        .landing-bio h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        .landing-bio p {
+            margin: 10px 0;
+        }
+        .credentials-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            font-weight: bold;
+        }
+        .credentials-list li {
+            margin-bottom: 5px;
+            color: #053225;
+            font-family: 'Nourd', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .credentials-list li:before {
+            content: "✔";
+            color: #053225;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        /* Service Grid */
+        .service-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-item {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(5, 50, 37, 0.1);
+            text-align: left;
+            border: 1px solid #4d7ea8;
+        }
+        .service-item img {
+            width: 80px;
+            max-width: 100%;
+            height: auto;
+            border: none;
+            margin-right: 15px;
+        }
+        .service-text {
+            flex: 1;
+        }
+        .service-text h3 {
+            font-family: 'Rubik', Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-optical-sizing: auto;
+            color: #e4572e;
+            margin: 0 0 5px;
+        }
+        .service-text p {
+            margin: 0;
+        }
+
+        /* Suburb List */
+        .suburb-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+        .suburb-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        .suburb-list li {
+            margin-bottom: 5px;
+            color: #053225;
+            font-family: 'Nourd', Arial, sans-serif;
+        }
+        .suburb-list li:before {
+            content: "🔸";
+            color: #4d7ea8;
+            margin-right: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #4d7ea8, #ff773d);
+            background-image: url('https://octopuscare.com.au/images/header.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 20px;
+            font-size: 14px;
+            text-align: center;
+            border-top: 2px solid #4d7ea8;
+        }
+        .footer-container p {
+            margin: 5px 0;
+            font-family: 'Nourd', Arial, sans-serif;
+        }
+        .footer-container a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Nourd', Arial, sans-serif;
+        }
+        .footer-container a:hover {
+            color: #4d7ea8;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .service-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .suburb-list {
+                justify-content: center;
+            }
+        }
+        @media (max-width: 767px) {
+            .social-link {
+                right: 10px; /* Closer to right edge on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://octopuscare.com.au/images/logohorizontalwhite.svg" alt="Octopus Care Logo" class="logo">
+    <a href="https://facebook.com/octopuscareadl" target="_blank" class="social-link" aria-label="Visit Octopus Care on Facebook">
+        <span class="fa-stack" style="vertical-align: top;">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fab fa-facebook-f fa-stack-1x"></i>
+        </span>
+    </a>
+</header>
+
+<div class="container">
+    <section class="landing">
+        <div class="landing-photo">
+            <img src="https://octopuscare.com.au/images/nikki.png" alt="Nikki - Qualified Endorsed Enrolled Nurse">
+        </div>
+        <div class="landing-bio">
+            <h1>Meet Nikki - Your Caring Support in Adelaide</h1>
+            <p>Hi, I’m Nikki, a <b>Qualified & Endorsed Enrolled Nurse (EN)</b> and Support Worker with over 14 years of experience in aged care nursing. Dedicated to helping you live independently, I founded <b>Octopus Care</b> to bring professional, compassionate support to Adelaide’s southern suburbs. Whether it’s personal care, a friendly chat, or keeping your home spotless, I’m here with a smile and a skilled hand.</p>
+            <ul class="credentials-list">
+                <li>Over 14 Years in Aged Care Nursing</li>
+                <li>Full Police Clearance</li>
+                <li>Working With Children Check</li>
+                <li>NDIS Clearance</li>
+                <li>Fully Insured</li>
+            </ul>
+        </div>
+    </section>
+    <a href="mailto:nikki@octopuscare.com.au" class="button">Get in Touch</a>
+    <p class="phone-number"><a href="tel:0415710101">0415 710 101</a></p>
+
+    <h2>How I Can Help - Nurse-Led Services in Southern Suburbs</h2>
+    <p>From <b>home cleaning</b> to <b>dementia care</b>, <b>transport</b> to <b>companionship</b>, I offer a holistic range of support services tailored to your needs. Enjoy flexible scheduling, precise care times, and continuity with the same caregiver in Adelaide’s southern suburbs.</p>
+
+    <div class="service-grid">
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/cleaning.png" alt="Home Cleaning Adelaide">
+            <div class="service-text">
+                <h3>Home Cleaning</h3>
+                <p>Professional <b>home cleaning services</b>, including <b>regular maintenance</b>, <b>deep cleans</b>, <b>end-of-lease cleaning</b>, and <b>Airbnb turnovers</b> to keep your property spotless.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/personal-care.png" alt="Personal Care">
+            <div class="service-text">
+                <h3>Personal Care</h3>
+                <p>Nurse-led <b>personal care</b>, assisting with <b>showering, dressing, mobility support</b>, and <b>dementia care</b> to promote your independence.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/transport.png" alt="Transport Services Adelaide">
+            <div class="service-text">
+                <h3>Transport Services</h3>
+                <p>Reliable <b>transport to appointments</b> or outings across Adelaide’s southern suburbs, ensuring you get where you need to go safely and on time.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/gardening.png" alt="Gardening Services Adelaide">
+            <div class="service-text">
+                <h3>Gardening</h3>
+                <p>Expert <b>gardening services</b> to maintain your outdoor space, from mowing to pruning.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/shopping.png" alt="Shopping Assistance Adelaide">
+            <div class="service-text">
+                <h3>Shopping Assistance</h3>
+                <p>Support with <b>shopping</b> for groceries or essentials, tailored to your needs.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/companionship.png" alt="Companionship Southern Suburbs">
+            <div class="service-text">
+                <h3>Companionship</h3>
+                <p>Warm and friendly <b>companionship</b> to combat loneliness, offering conversation and support.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/dog.png" alt="Dog Walking Adelaide">
+            <div class="service-text">
+                <h3>Dog Walking</h3>
+                <p>Caring <b>dog walking services</b> to keep your pets happy and healthy, available across Adelaide’s southern suburbs.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="https://octopuscare.com.au/images/meal-prep.png" alt="Meal Preparation Adelaide">
+            <div class="service-text">
+                <h3>Meal Preparation</h3>
+                <p>Assistance with <b>meal preparation</b>, including planning and cooking nutritious meals tailored to your dietary needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Service Area - Southern Suburbs of Adelaide</h2>
+    <p><b>Octopus Care</b> proudly provides nurse-led support across Adelaide’s southern suburbs, including but not limited to:</p>
+
+    <div class="suburb-list">
+        <ul>
+            <li>Aberfoyle Park</li>
+            <li>Aldinga</li>
+            <li>Aldinga Beach</li>
+            <li>Bedford Park</li>
+            <li>Bellevue Heights</li>
+            <li>Blackwood</li>
+            <li>Blewitt Springs</li>
+            <li>Chandlers Hill</li>
+            <li>Christie Downs</li>
+            <li>Christies Beach</li>
+            <li>Clarendon</li>
+            <li>Darlington</li>
+            <li>Dover Gardens</li>
+            <li>Eden Hills</li>
+            <li>Flagstaff Hill</li>
+            <li>Hackham</li>
+            <li>Hackham West</li>
+        </ul>
+        <ul>
+            <li>Hallett Cove</li>
+            <li>Happy Valley</li>
+            <li>Morphett Vale</li>
+            <li>Noarlunga Centre</li>
+            <li>Noarlunga Downs</li>
+            <li>O'Halloran Hill</li>
+            <li>Reynella</li>
+            <li>Seaford</li>
+            <li>Seacliff</li>
+            <li>Sheidow Park</li>
+            <li>Woodcroft</li>
+            <li>Port Noarlunga</li>
+            <li>Port Willunga</li>
+            <li>Warradale</li>
+            <li>Trott Park</li>
+            <li>Upper Sturt</li>
+            <li>Onkaparinga Hills</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p>📍 <b>Servicing Adelaide’s Southern Suburbs</b></p>
+        <p>📞 <a href="tel:0415710101">0415 710 101</a></p>
+        <p>✉️ <a href="mailto:nikki@octopuscare.com.au">nikki@octopuscare.com.au</a></p>
+        <p>📝 <b>ABN: 73 941 730 815</b></p>
+        <p>🌐 Website designed by <a href="https://nebtech.com.au" target="_blank">NebTech - Business IT Solutions</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
